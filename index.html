@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kiss Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ad1457,#c2185b);
+  font-family:'Segoe UI', sans-serif;
+  color:#ffffff;
+}
+.card{
+  width:90%;
+  max-width:430px;
+  background:rgba(255,255,255,0.15);
+  padding:28px;
+  border-radius:22px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,0.45);
+}
+h1{
+  font-size:26px;
+  margin-bottom:12px;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.6;
+  margin-top:16px;
+}
+button{
+  margin-top:24px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#ffffff;
+  color:#ad1457;
+  cursor:pointer;
+}
+.signature{
+  margin-top:20px;
+  font-size:16px;
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>💋 Supriya 💋</h1>
+
+<p id="m1">Aaj Kiss Day hai.</p>
+<p id="m2">Yeh din pyar aur samvedansheel ehsaas ko darshata hai.</p>
+<p id="m3">Apnapan, sammaan aur pyaar ko shabdon ke alawa ehsaas ke zariye vyakt karna hi iska maksad hai.</p>
+<p id="m4">Is din ke sandarbh mein yeh chhota sa gesture aapke liye ek sukhad yaad rahe.</p>
+<p id="m5"><b>Umeed hai aaj ka din aapke liye khushi aur positivity laaye.</b></p>
+
+<div class="signature" id="sign">— Anooj</div>
+
+<button onclick="showMessage()">Read Message 💋</button>
+</div>
+
+<script>
+let i = 1;
+function showMessage(){
+  if(i <= 5){
+    document.getElementById("m"+i).style.display = "block";
+    i++;
+  } else {
+    document.getElementById("sign").style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
